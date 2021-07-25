@@ -11,6 +11,8 @@ class Cores {
   static const Color azul = Colors.blue;
   static const Color verde = Colors.green;
   static const Color amarelo = Colors.yellow;
+  static const Color rosa = Colors.pink;
+  static const Color cinzaEscuro = Color(0xFFD3D3D3);
 }
 
 class HexColor extends Color {

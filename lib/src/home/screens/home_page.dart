@@ -1,19 +1,22 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:odonto_app_event/src/home/widgets/navigation_bar_widget.dart';
-import 'package:odonto_app_event/ui/imagens.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
-class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+import 'package:odonto_app_event/src/home/widgets/navigation_bar_widget.dart';
+import 'package:odonto_app_event/ui/imagens.dart';
 
+class HomePage extends StatefulWidget {
+  HomePage({
+    Key? key,
+  }) : super(key: key);
+  final PageController pageController = PageController();
   @override
   _HomePageState createState() => _HomePageState();
 }
 
 class _HomePageState extends State<HomePage> {
+  int activePage = 2;
   GlobalKey<CurvedNavigationBarState> _bottomNavigationKey = GlobalKey();
   @override
   Widget build(BuildContext context) {
@@ -36,7 +39,9 @@ class _HomePageState extends State<HomePage> {
             ],
           ),
           bottomNavigationBar: NavigationBar(
+            indexPage: 2,
             bottomNavigationKey: _bottomNavigationKey,
+            activePage: 2,
           ),
         );
       },

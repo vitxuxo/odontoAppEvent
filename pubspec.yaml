@@ -33,6 +33,10 @@ dependencies:
   curved_navigation_bar: ^1.0.1
   flutter_svg: ^0.22.0
   carousel_slider: ^4.0.0
+  hive: ^2.0.4
+  hive_generator: ^1.1.0
+  mask_text_input_formatter: ^2.0.0
+  fluttertoast: ^8.0.7
 
 dev_dependencies:
   flutter_test:

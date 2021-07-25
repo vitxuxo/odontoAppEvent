@@ -3,6 +3,7 @@ class Icones {
     return 'assets/icons/svg/$nomeIcone.svg';
   }
 
+  // ignore: unused_element
   static String _iconsPNG({required String nomeIcone}) {
     return 'assets/icons/png/$nomeIcone.png';
   }
